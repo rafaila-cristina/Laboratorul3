@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Biblioteca {
+
     private ArrayList<Carte> listaCarti;
 
     public void sort()
@@ -21,6 +22,7 @@ public class Biblioteca {
     }
 
     public Biblioteca() {
+
         listaCarti =new ArrayList<Carte>();
     }
 
@@ -33,14 +35,18 @@ public class Biblioteca {
 
     public void add(Carte c)
     {
+
         this.listaCarti.add(c);
+
     }
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Biblioteca contine: \n");
+
         for (Carte c: listaCarti)
+
         {
             builder.append(c.toString());
             builder.append("\n");
